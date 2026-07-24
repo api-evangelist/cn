@@ -1,7 +1,26 @@
 aid: cn
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cn.png
 name: cn
-description: cn is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'cn is the China-region web presence (cn.ausperbio.com) of AusperBio Therapeutics
+  (Hangzhou Ausper Bio / 杭州浩博医药有限公司), a Phase II clinical-stage biopharmaceutical company
+  dedicated to transforming HBV treatment toward a functional cure and advancing oligonucleotide
+  therapeutics. AusperBio leverages its proprietary Med-Oligo ASO platform with targeted
+  delivery technologies to apply antisense oligonucleotide (ASO) therapeutics across viral
+  infections, metabolic conditions, genetic disorders, and immune diseases; its lead candidate
+  AHB-137 is an unconjugated ASO advancing through Phase II/III trials for chronic hepatitis B.
+  Surfaced as a portfolio company of Qiming Venture Partners and added to the API Evangelist
+  network as a stub; the company publishes a marketing website but no public developer or API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/cn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,23 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment: 'Slug "cn" is a mis-parse of the cn.ausperbio.com regional subdomain; real entity
+  is AusperBio Therapeutics (www.ausperbio.com). No developer/API surface exists (marketing SPA
+  only; cms.ausperbio.com is an internal headless CMS, not a public API). No OpenAPI, SDKs, MCP,
+  webhooks, or docs to enrich. Domain-security probed; well-known paths all catch-all 200 (no real
+  discovery documents).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Biopharmaceutical
+- Clinical-Stage
+- Oligonucleotide Therapeutics
+- Hepatitis B
+- Drug Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,7 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cn-domain-security.yml
 - type: Website
-  url: https://cn.ausperbio.com
+  url: https://www.ausperbio.com
