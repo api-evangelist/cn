@@ -33,7 +33,7 @@ x-enrichment: 'Slug "cn" is a mis-parse of the cn.ausperbio.com regional subdoma
   only; cms.ausperbio.com is an internal headless CMS, not a public API). No OpenAPI, SDKs, MCP,
   webhooks, or docs to enrich. Domain-security probed; well-known paths all catch-all 200 (no real
   discovery documents).'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
